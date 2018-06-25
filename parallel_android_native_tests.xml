@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="TestNG Forum" parallel="tests">
+
+    <test name="Appium Test 1">
+        <parameter name="platform" value="Android-7.1.1"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="8210"/>
+        <classes>
+            <class name="com.appium.AppiumAndroidNativeAppTest"/>
+        </classes>
+    </test> <!-- TestNG Test -->
+
+    <test name="Appium Test 2">
+        <parameter name="platform" value="Android-7.1.1"/>
+        <parameter name="udid" value="emulator-5556"/>
+        <parameter name="systemPort" value="8213"/>
+        <classes>
+            <class name="com.appium.AppiumAndroidNativeAppTest"/>
+        </classes>
+    </test> <!-- TestNG Test -->
+</suite> <!-- TestNG Forum -->
