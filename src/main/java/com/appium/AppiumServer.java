@@ -2,7 +2,6 @@ package com.appium;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import io.appium.java_client.service.local.flags.AndroidServerFlag;
 
 import java.io.File;
 
@@ -33,7 +32,7 @@ public class AppiumServer {
                         .withLogFile(new File(
                                 System.getProperty("user.dir")
                                         + "/appium_logs.txt"))
-                        .usingAnyFreePort().withArgument(AndroidServerFlag.CHROME_DRIVER_EXECUTABLE,"/Users/hemantojha/Downloads/chromedriver_mobile");;
+                        .usingAnyFreePort();
         appiumDriverLocalService = builder.build();
         appiumDriverLocalService.start();
 

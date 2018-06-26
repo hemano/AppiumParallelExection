@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" verbose="2" name="TestNG Forum" parallel="tests">
+<parameter name="chromeDriverExecPath" value="/Users/hemantojha/Downloads/chromedriver_mobile"/>
 
 <test name="Appium Test 1">
     <parameter name="platform" value="Android-7.1.1"/>
     <parameter name="udid" value="emulator-5554"/>
-    <parameter name="systemPort" value="8210"/>
+    <parameter name="chromeDriverPort" value="9515"/>
     <classes>
-        <class name="com.appium.AppiumAndroidNativeAppTest"/>
+        <class name="com.appium.AppiumAndroidBrowserTest"/>
     </classes>
 </test> <!-- TestNG Test -->
 
 <test name="Appium Test 2">
     <parameter name="platform" value="Android-7.1.1"/>
     <parameter name="udid" value="emulator-5556"/>
-    <parameter name="systemPort" value="8213"/>
+    <parameter name="chromeDriverPort" value="9516"/>
     <classes>
-        <class name="com.appium.AppiumAndroidNativeAppTest"/>
+        <class name="com.appium.AppiumAndroidBrowserTest"/>
     </classes>
 </test> <!-- TestNG Test -->
 </suite> <!-- TestNG Forum -->
